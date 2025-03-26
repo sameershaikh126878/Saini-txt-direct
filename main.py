@@ -168,7 +168,7 @@ async def help_handler(client: Client, m: Message):
 @bot.on_message(filters.command(["help"]))
 async def txt_handler(client: Client, m: Message):
     await bot.send_message(m.chat.id, text= (
-        "<pre><code> 🎉Congrats! You are using 𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎:</code></pre>\n┣\n"
+        "<pre><code> 🎉Congrats! You are using MR BRIJESH:</code></pre>\n┣\n"
         "┣⪼01. Send /start - To Check Bot \n┣\n"
         "┣⪼02. Send /brijesh - for extract txt file\n┣\n"
         "┣⪼03. Send /y2t - YouTube to .txt Convert\n┣\n"
@@ -369,7 +369,7 @@ async def youtube_to_txt(client, message: Message):
     # Remove the temporary text file after sending
     os.remove(txt_file)
 
-@bot.on_message(filters.command(["saini"]) )
+@bot.on_message(filters.command(["brijesh"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"<pre><code>**🔹Hi I am Poweful TXT Downloader📥 Bot.**</code></pre>\n<pre><code>🔹**Send me the TXT file and wait.**</code></pre>")
     input: Message = await bot.listen(editable.chat.id)
@@ -657,7 +657,7 @@ async def txt_handler(bot: Client, m: Message):
                            f"📚𝐓𝐢𝐭𝐥𝐞 » `{name}`\n" \
                            f"<pre><code>🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}p</code></pre>\n" \
                            f"🔗𝐋𝐢𝐧𝐤 » `{link0}`\n" \
-                           f"<pre><code>✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎🐦`</code></pre>"
+                           f"<pre><code>✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ `RAO SAHAB ✅🐦`</code></pre>"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -693,7 +693,7 @@ async def text_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"<pre><code>**🔹Processing your link...\n🔁Please wait...⏳**</code></pre>")
     await m.delete()
 
-    await editable.edit("<pre><code>╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ </code></pre>\n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n<pre><code>╰━━⌈⚡[`🦋🇸‌🇦‌🇮‌🇳‌🇮‌🦋`]⚡⌋━━➣ </code></pre>")
+    await editable.edit("<pre><code>╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ </code></pre>\n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n<pre><code>╰━━⌈⚡[`🦋RAO SAHAB ✅ 🦋`]⚡⌋━━➣ </code></pre>")
     input2: Message = await bot.listen(editable.chat.id, filters=filters.text & filters.user(m.from_user.id))
     raw_text2 = input2.text
     quality = input2.text
