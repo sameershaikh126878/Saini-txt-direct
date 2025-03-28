@@ -133,7 +133,7 @@ Busy = InlineKeyboardMarkup(
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://tinypic.host/images/2025/02/07/IMG_20250207_224444_975.jpg",
+    "https://i.ibb.co/LtqjVy7/file-3958.jpg",
     "https://tinypic.host/images/2025/02/07/DeWatermark.ai_1738952933236-1.png",
     # Add more image URLs as needed
 ]
@@ -230,9 +230,12 @@ async def start_command(bot: Client, message: Message):
     # Caption for the image
     caption = (
         "<pre><code>🌟 Welcome Boss😸! 🌟</code></pre>\n\n"
-        "➽ I am Powerful DRM Uploader Bot 📥\n\n➽ 𝐔𝐬𝐞 /drm for use this Bot.\n\n<pre><code> 𝐌𝐚𝐝𝐞 𝐁𝐲 : RAO SAHAB ✅ 🦁</code></pre>"
-    )
+        "𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫 👋!\n\n➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐖𝐢𝐭𝐡 ♥️\n\n\➠ Can Extract Videos & PDFs From Your Text File and Upload to Telegram!
+➠ For Guide Use Command /help 📖
 
+\n\n➠ Use /drm Command to Download From TXT File 📄.\n\n<pre><code>➠ 𝐌𝐚𝐝𝐞 𝐁𝐲:@RAO_SAHAB_JI_BOT 😜</code></pre"
+    )
+      
     await asyncio.sleep(1)
     await loading_message.edit_text(
         "Initializing Uploader bot... 🤖\n\n"
